@@ -1,0 +1,48 @@
+.card__container {
+  flex-shrink: 0;
+  position: relative;
+  height: 270px;
+  width: 200px;
+  background-color: rgb(239, 240, 241);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 24px;
+}
+
+.card_topRight__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.card_topRight__container > svg {
+  width: 20px;
+}
+
+.card_bottomLeft__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+}
+
+.card_bottomLeft__container > svg {
+  width: 20px;
+}
+
+.card_body__suit > svg {
+  width: 48px;
+}
+
+.card_value__text {
+  font-size: 20px;
+  margin: 0;
+}

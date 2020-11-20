@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import deck from "./utils/deck.json";
+import Hand from "./components/Hand/Hand";
+
+const drawRandomHand = () => {
+  // 💡 We want to drawn 5 radom cards!
+  return deck.slice(0, 5);
+};
+
+const drawRandomCard = () => {
+  // 💡 We want to drawn 1 radom card!
+  return deck[11];
+};
 
 function App() {
+  const [drawnCards, setDrawnCards] = useState(drawRandomHand);
+
+  // 💯 What if we want to add another hand for another player? Think about a way to add a Player name
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app__container">
+      <Hand cards={drawnCards} />
     </div>
   );
 }
