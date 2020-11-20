@@ -5,11 +5,11 @@ import Hand from "./components/Hand/Hand";
 
 const drawRandomHand = () => {
   // 💡 We want to drawn 5 radom cards!
-  return deck.slice(0, 5);
+  return deck.slice(5, 10);
 };
 
 const drawRandomCard = () => {
-  // 💡 We want to drawn 1 radom card!
+  // 💡 We want to draw 1 radom card!
   return deck[11];
 };
 

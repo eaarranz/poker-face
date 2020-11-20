@@ -46,3 +46,15 @@
   font-size: 20px;
   margin: 0;
 }
+
+.medium_suit {
+  width: 48px;
+}
+
+.small_suit {
+  width: 20px;
+}
+
+.medium_suit > svg > path {
+  fill: red;
+}

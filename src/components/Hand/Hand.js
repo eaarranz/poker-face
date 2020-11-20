@@ -7,11 +7,11 @@ const Hand = ({ cards }) => {
   // 💡 Add here the state of the best card of the ones visible
 
   // 💡 Add a button to draw another card
-  // 💯 limit the cards to 5 and create a restart button
+  // 💯 start with 3 cards, limit the cards to 5 and create a restart button
   return (
     <div className="hand__container">
       {cards.map((card) => (
-        <Card suit={card.suit} value={card.value} />
+        <Card suit={card.suit} value={card.value} patata={false} />
       ))}
     </div>
   );
