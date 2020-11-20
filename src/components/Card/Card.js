@@ -24,7 +24,7 @@ const Card = ({ suit, value }) => {
   };
 
   const showCard = () => setIsFront(true);
-  const hideCard = () => setIsFront(true);
+  const hideCard = () => setIsFront(false);
 
   console.log("Card: ", value, suit, isFront);
 
